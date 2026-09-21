@@ -1,0 +1,15 @@
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\bin\Debug\net9.0\Day01.exe
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\bin\Debug\net9.0\Day01.deps.json
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\bin\Debug\net9.0\Day01.runtimeconfig.json
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\bin\Debug\net9.0\Day01.dll
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\bin\Debug\net9.0\Day01.pdb
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.AssemblyInfoInputs.cache
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.AssemblyInfo.cs
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.csproj.CoreCompileInputs.cache
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.sourcelink.json
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.dll
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\refint\Day01.dll
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.pdb
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\Day01.genruntimeconfig.cache
+C:\Users\CYNDRICK\Desktop\git-team-practice\Day01\obj\Debug\net9.0\ref\Day01.dll

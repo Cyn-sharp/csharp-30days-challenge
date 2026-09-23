@@ -4,29 +4,24 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Student name: ");
-        string name = Console.ReadLine();
+        Random random = new Random();
+        int secretNumber = random.Next(1, 101);
+        int guess = 0;
 
-        Console.Write("Math grade: ");
-        double math = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("=== NUMBER GUESSING GAME ===");
+        Console.WriteLine("Guess a number from 1 to 100.");
 
-        Console.Write("Science grade: ");
-        double science = Convert.ToDouble(Console.ReadLine());
+        while (guess != secretNumber)
+        {
+            Console.Write("Enter your guess: ");
+            guess = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("Programming grade: ");
-        double programming = Convert.ToDouble(Console.ReadLine());
-
-        double average = (math + science + programming) / 3;
-
-        Console.WriteLine("\n=== RESULT ===");
-        Console.WriteLine($"Student: {name}");
-        Console.WriteLine($"Average: {average:F2}");
-
-        if (average >= 90)
-            Console.WriteLine("Remark: Excellent");
-        else if (average >= 75)
-            Console.WriteLine("Remark: Passed");
-        else
-            Console.WriteLine("Remark: Failed");
+            if (guess < secretNumber)
+                Console.WriteLine("Too low!");
+            else if (guess > secretNumber)
+                Console.WriteLine("Too high!");
+            else
+                Console.WriteLine("Correct! 🎉");
+        }
     }
 }

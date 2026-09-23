@@ -4,20 +4,36 @@ class Program
 {
     static void Main()
     {
-        string[] products = { "Keyboard", "Mouse", "Headset" };
-        double[] prices = { 850, 450, 1200 };
+        Console.Write("Create a password: ");
+        string password = Console.ReadLine();
 
-        double total = 0;
+        bool hasMinimumLength = password.Length >= 8;
+        bool hasNumber = false;
 
-        Console.WriteLine("=== SHOPPING CART ===");
-
-        for (int i = 0; i < products.Length; i++)
+        foreach (char character in password)
         {
-            Console.WriteLine($"{products[i]} - ₱{prices[i]:N2}");
-            total += prices[i];
+            if (char.IsDigit(character))
+            {
+                hasNumber = true;
+                break;
+            }
         }
 
-        Console.WriteLine("---------------------");
-        Console.WriteLine($"Total: ₱{total:N2}");
+        Console.WriteLine("\n=== PASSWORD CHECK ===");
+
+        if (hasMinimumLength && hasNumber)
+        {
+            Console.WriteLine("Strong password!");
+        }
+        else
+        {
+            Console.WriteLine("Weak password.");
+
+            if (!hasMinimumLength)
+                Console.WriteLine("- Must contain at least 8 characters.");
+
+            if (!hasNumber)
+                Console.WriteLine("- Must contain at least one number.");
+        }
     }
 }

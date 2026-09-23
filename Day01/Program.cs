@@ -4,46 +4,29 @@ class Program
 {
     static void Main()
     {
-        double balance = 5000;
+        Console.Write("Student name: ");
+        string name = Console.ReadLine();
 
-        Console.WriteLine("=== SIMPLE ATM ===");
-        Console.WriteLine("1. Check Balance");
-        Console.WriteLine("2. Deposit");
-        Console.WriteLine("3. Withdraw");
+        Console.Write("Math grade: ");
+        double math = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write("Choose: ");
-        int choice = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Science grade: ");
+        double science = Convert.ToDouble(Console.ReadLine());
 
-        if (choice == 1)
-        {
-            Console.WriteLine($"Balance: ₱{balance:N2}");
-        }
-        else if (choice == 2)
-        {
-            Console.Write("Deposit amount: ");
-            double amount = Convert.ToDouble(Console.ReadLine());
+        Console.Write("Programming grade: ");
+        double programming = Convert.ToDouble(Console.ReadLine());
 
-            balance += amount;
-            Console.WriteLine($"New balance: ₱{balance:N2}");
-        }
-        else if (choice == 3)
-        {
-            Console.Write("Withdraw amount: ");
-            double amount = Convert.ToDouble(Console.ReadLine());
+        double average = (math + science + programming) / 3;
 
-            if (amount <= balance)
-            {
-                balance -= amount;
-                Console.WriteLine($"New balance: ₱{balance:N2}");
-            }
-            else
-            {
-                Console.WriteLine("Insufficient balance.");
-            }
-        }
+        Console.WriteLine("\n=== RESULT ===");
+        Console.WriteLine($"Student: {name}");
+        Console.WriteLine($"Average: {average:F2}");
+
+        if (average >= 90)
+            Console.WriteLine("Remark: Excellent");
+        else if (average >= 75)
+            Console.WriteLine("Remark: Passed");
         else
-        {
-            Console.WriteLine("Invalid choice.");
-        }
+            Console.WriteLine("Remark: Failed");
     }
 }

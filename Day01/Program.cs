@@ -1,10 +1,10 @@
 ﻿using System;
 
-class Program
+namespace Day1
 {
-    static void Main()
+    class Program
     {
-        Console.Write("Hello World");
+        
+        
     }
-
 }
